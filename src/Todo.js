@@ -108,7 +108,6 @@ const styles = StyleSheet.create({
   },
   toggle: {
     flexDirection: 'row',
-    //marginHorizontal: 15,
   },
   todos: {
     flex: 1,

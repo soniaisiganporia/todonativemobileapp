@@ -1,7 +1,4 @@
-//import { HOST, PORT, IS_PROD, GITPOD} from '@env'
 
-// For GitPod
-//const host = "https://8888-beige-pig-vdeak5ht.ws-us11.gitpod.io";
 
 // GENERATE
 const generateEndpoint = () => {
@@ -22,7 +19,7 @@ const generateEndpoint = () => {
   }
 }
 
-// Original CREATE
+// CREATE
 const addRestTodo = async (todo) => {
   const endpoint = generateEndpoint();
   const stringifiedBody = JSON.stringify(todo);
@@ -34,29 +31,10 @@ const addRestTodo = async (todo) => {
   return response;
 };
 
-/*
-// New CREATE 
-const addRestTodo = (todo) => {
-  const endpoint = generateEndpoint();
-  //console.log("endpoint: ", endpoint);
-  sleep(2);
-  const stringifiedBody = JSON.stringify(todo);
-  return fetch(`${endpoint}/.netlify/functions/createRestTodo`, {
-    body: stringifiedBody,
-    method: "POST",
-  }).then((response) => {
-    return response.json();
-  }).catch((error) => {
-    console.log(error)
-    throw error;
-  });
-};
-*/
 
 // READ
 const getRestTodos = async () => {
   const endpoint = generateEndpoint();
-  //console.log("endpoint: ", endpoint);
   const response = await fetch(`${endpoint}/.netlify/functions/getRestTodos`);
   let todos = await response.json();
 
@@ -66,7 +44,6 @@ const getRestTodos = async () => {
 // UPDATE
 const updateRestTodo = async (todo) => {
   const endpoint = generateEndpoint();
-  //console.log("endpoint: ", endpoint);
   const stringifiedBody = JSON.stringify(todo);
   const response = await fetch(`${endpoint}/.netlify/functions/updateRestTodo`, {
     body: stringifiedBody,
@@ -80,7 +57,6 @@ const updateRestTodo = async (todo) => {
 // DELETE
 const deleteRestTodo = async (id) => {
   const endpoint = generateEndpoint();
-  //console.log("endpoint: ", endpoint);
   const stringifiedBody = JSON.stringify({ id });
   const response = await fetch(`${endpoint}/.netlify/functions/deleteRestTodo`, {
     body: stringifiedBody,
