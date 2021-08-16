@@ -1,7 +1,7 @@
 # Todo List Native Application
 Build a To-Do List Native App, created for a DataStax workshop, using React Native, JavaScript, Node.js, and DataStax AstraDB.
 
-**Part 1: Create the Database**
+**Part 1: Create the Database:)**
 
 <!--- STARTEXCLUDE --->
 # Todo List + AstraDB + Cassandra 📒
