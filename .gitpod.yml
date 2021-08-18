@@ -9,6 +9,7 @@ tasks:
       npm install astra-setup
       npm install whatwg-fetch
       npm install -g @expo/ngrok
+      npm install @expo/ngrok@4.1.0
       npm install react-native-gesture-handler
       npm install @react-native-segmented-control/segmented-control
       npm install @expo-google-fonts/inter --legacy-peer-deps
@@ -35,17 +36,17 @@ ports:
     onOpen: ignore
     visibility: public
   - port: 19001
-    onOpen: open-browser
+    onOpen: ignore
     visibility: public
   - port: 19002
-    onOpen: open-browser
+    onOpen: ignore
     visibility: public
   - port: 3000
     onOpen: ignore  
   - port: 4040
-    onOpen: open-browser
+    onOpen: ignore
     visibility: public
-  - port: 5555
-    onOpen: open-browser
+  - port: 5037
+    onOpen: ignore
     visibility: public
 
