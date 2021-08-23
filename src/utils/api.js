@@ -6,11 +6,11 @@ const generateEndpoint = () => {
   const port = process.env.PORT;
 
   // Netlify deploy
-  if (process.env.IS_PROD === "true") {
+  if (process.env.IS_PROD == "true") {
     return ``;
   }
   // Running on GitPod
-  else if (process.env.GITPOD === "true") {
+  else if (process.env.GITPOD == "true") {
     return ipAddress;
   }
   // Local configuration

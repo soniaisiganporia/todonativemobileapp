@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import TodoTextInput from "./TodoTextInput.js";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFPercentage } from "react-native-responsive-fontsize";
 
 function Header(props) {
 
@@ -30,7 +30,6 @@ function Header(props) {
 
 const styles = StyleSheet.create({
   h1: {
-    //fontSize: 40,
     fontSize: RFPercentage(4),
     textAlign: 'center',
     paddingTop: 8,
@@ -43,7 +42,6 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     paddingBottom: 10,
     paddingHorizontal: 10,
-    //paddingRight: 10,
   }
 
 });

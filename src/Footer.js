@@ -48,9 +48,6 @@ function Footer(props) {
   );
 }
 
-// Adding Segment Control in TodoList component instead
-//<Text> {renderFilterList()} </Text>
-
 const styles = StyleSheet.create({
   footer: {
     width: '100%',
@@ -61,6 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderColor: '#d0dde2',
     borderTopWidth: 0.5,
+    fontFamily: 'Inter_600SemiBold'
   },
 });
 
